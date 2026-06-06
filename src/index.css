@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #050711;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(43, 127, 255, 0.2), transparent 26rem),
+    radial-gradient(circle at 76% 6%, rgba(139, 92, 246, 0.16), transparent 24rem),
+    #050711;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: #021018;
+  background: #36f3ff;
+}
+
+.cyber-grid {
+  position: fixed;
+  inset: -64px;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(54, 243, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(54, 243, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(rgba(139, 92, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 92, 246, 0.05) 1px, transparent 1px);
+  background-size:
+    48px 48px,
+    48px 48px,
+    192px 192px,
+    192px 192px;
+  mask-image: linear-gradient(to bottom, black 0%, black 72%, transparent 100%);
+  opacity: 0.75;
+  animation: grid-drift 24s linear infinite;
+}
+
+.cyber-grid::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(115deg, transparent 0 42%, rgba(54, 243, 255, 0.1) 42% 42.25%, transparent 42.25%),
+    linear-gradient(72deg, transparent 0 61%, rgba(50, 245, 163, 0.08) 61% 61.25%, transparent 61.25%);
+}
+
+.signal-field {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(130deg, transparent 0 18%, rgba(54, 243, 255, 0.08) 18% 18.2%, transparent 18.2%),
+    linear-gradient(47deg, transparent 0 68%, rgba(139, 92, 246, 0.08) 68% 68.16%, transparent 68.16%),
+    radial-gradient(circle at center, rgba(54, 243, 255, 0.18) 0 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    100% 100%,
+    54px 54px;
+  opacity: 0.38;
+  mask-image: radial-gradient(circle at 50% 22%, black 0, transparent 68%);
+}
+
+.hero-circuit {
+  background:
+    linear-gradient(90deg, transparent 0 49%, rgba(54, 243, 255, 0.14) 49% 49.2%, transparent 49.2%),
+    linear-gradient(0deg, transparent 0 42%, rgba(139, 92, 246, 0.12) 42% 42.15%, transparent 42.15%),
+    radial-gradient(circle at 18% 18%, rgba(54, 243, 255, 0.18), transparent 26rem),
+    radial-gradient(circle at 82% 12%, rgba(139, 92, 246, 0.14), transparent 24rem);
+  background-size:
+    180px 180px,
+    220px 220px,
+    100% 100%,
+    100% 100%;
+  mask-image: linear-gradient(to bottom, black 0, transparent 82%);
+}
+
+.glass-panel {
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background:
+    linear-gradient(135deg, rgba(15, 23, 42, 0.76), rgba(11, 16, 32, 0.58)),
+    linear-gradient(135deg, rgba(54, 243, 255, 0.08), rgba(139, 92, 246, 0.06));
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+  backdrop-filter: blur(18px);
+}
+
+.module-border {
+  position: relative;
+}
+
+.module-border::before {
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  content: "";
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(54, 243, 255, 0.45),
+    rgba(139, 92, 246, 0.24),
+    rgba(50, 245, 163, 0.16)
+  );
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.module-border:hover::before {
+  opacity: 1;
+}
+
+.terminal-card {
+  overflow: hidden;
+}
+
+.terminal-card::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(54, 243, 255, 0.12),
+    transparent
+  );
+  animation: scan-line 5s ease-in-out infinite;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
