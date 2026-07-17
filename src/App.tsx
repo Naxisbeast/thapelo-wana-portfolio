@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import About from './components/About';
 import Contact from './components/Contact';
 import CV from './components/CV';
@@ -13,6 +14,7 @@ import Skills from './components/Skills';
 export default function App() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-void text-slate-100">
+      <Analytics />
       <div className="cyber-grid" aria-hidden="true" />
       <div className="signal-field" aria-hidden="true" />
       <div className="relative z-10">
