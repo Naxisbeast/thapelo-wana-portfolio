@@ -9,7 +9,7 @@ export default function FeaturedProjects() {
         <SectionHeader
           eyebrow="FEATURED_BUILDS"
           title="Project modules that show software growth."
-          description="A focused set of repositories covering full-stack systems, academic teamwork, core Java foundations, SQL database work, and software engineering documentation."
+          description="A focused set of repositories covering algorithmic trading systems, full-stack applications, academic teamwork, core Java foundations, SQL database work, and software engineering documentation."
         />
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">

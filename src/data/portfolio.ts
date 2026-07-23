@@ -39,6 +39,14 @@ export const projects: Project[] = [
     signal: 'GROUP_BUILD',
   },
   {
+    title: 'AURUM-1',
+    description:
+      'A research-driven algorithmic trading system for developing, validating, and deploying quantitative strategies. Features autonomous paper trading, walk-forward backtesting, Monte Carlo validation, and a live Streamlit dashboard. The D4 Donchian breakout strategy achieves 88.9% positive walk-forward windows with 0% ruin probability.',
+    tech: ['Python', 'Streamlit', 'SQLite', 'OANDA API', 'pytest'],
+    github: 'https://github.com/Naxisbeast/AURUM-1',
+    signal: 'QUANT_SYSTEMS',
+  },
+  {
     title: 'Data Structures and Algorithms Java',
     description:
       'Java DSA foundation repo covering linked lists, stacks, queues, recursion, and complexity analysis.',
