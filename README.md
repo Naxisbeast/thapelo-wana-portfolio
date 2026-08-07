@@ -51,7 +51,7 @@ Preview the production build:
 npm run preview
 ```
 
-## CV Placeholder
+## CV
 
 The CV button links to:
 
@@ -59,7 +59,7 @@ The CV button links to:
 /Thapelo_Wana_CV_2026.pdf
 ```
 
-Place the final PDF in the `public` folder with that exact filename when it is ready. The PDF is intentionally not included in this project.
+The PDF lives in `public/` and is served from the site root. Replace it with an updated version as needed, keeping the same filename.
 
 ## Deployment
 

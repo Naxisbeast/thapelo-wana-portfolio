@@ -23,9 +23,17 @@ export const profile = {
 
 export const projects: Project[] = [
   {
+    title: 'AURUM-1',
+    description:
+      'An autonomous algorithmic trading system for XAU/USD. 265 tests, 88.9% positive walk-forward windows across 11 years of data, and live paper trading on a cloud server with a real-time Streamlit dashboard.',
+    tech: ['Python', 'Streamlit', 'SQLite', 'OANDA API', 'pytest'],
+    github: 'https://github.com/Naxisbeast/AURUM-1',
+    signal: 'QUANT_SYSTEMS',
+  },
+  {
     title: 'Clinic Appointment System',
     description:
-      'A clinic appointment scheduling system with patient, doctor, and admin workflows.',
+      'A full-stack clinic appointment scheduling system with patient, doctor, and admin workflows, Supabase authentication, and a notification pipeline.',
     tech: ['React', 'TypeScript', 'Supabase', 'Tailwind CSS'],
     github: 'https://github.com/Naxisbeast/Clinic-Appointment-System',
     signal: 'FULL_STACK_MODULE',
@@ -33,65 +41,67 @@ export const projects: Project[] = [
   {
     title: 'CineBook',
     description:
-      'An online movie ticket booking system built as an academic group project.',
+      'An online movie ticket booking system built as an academic group project, with role-based dashboards and a relational MySQL/Oracle schema.',
     tech: ['React', 'Node.js', 'Express', 'MySQL', 'Oracle SQL'],
     github: 'https://github.com/Naxisbeast/CineBook-Group_4',
     signal: 'GROUP_BUILD',
   },
   {
-    title: 'AURUM-1',
+    title: 'CS Foundations',
     description:
-      'A research-driven algorithmic trading system for developing, validating, and deploying quantitative strategies. Features autonomous paper trading, walk-forward backtesting, Monte Carlo validation, and a live Streamlit dashboard. The D4 Donchian breakout strategy achieves 88.9% positive walk-forward windows with 0% ruin probability.',
-    tech: ['Python', 'Streamlit', 'SQLite', 'OANDA API', 'pytest'],
-    github: 'https://github.com/Naxisbeast/AURUM-1',
-    signal: 'QUANT_SYSTEMS',
-  },
-  {
-    title: 'Data Structures and Algorithms Java',
-    description:
-      'Java DSA foundation repo covering linked lists, stacks, queues, recursion, and complexity analysis.',
-    tech: ['Java'],
-    github: 'https://github.com/Naxisbeast/data-structures-and-algorithms-java',
+      'Consolidated data structures, OOP, structured programming, and Python basics across Java, C++, and Python — organised by concept, not by course.',
+    tech: ['Java', 'C++', 'Python'],
+    github: 'https://github.com/Naxisbeast/cs-foundations',
     signal: 'CS_FOUNDATION',
   },
   {
-    title: 'Database Systems SQL',
+    title: 'Database & Systems Design',
     description:
-      'SQL database foundation repo covering schema design, joins, constraints, relationships, and normalization.',
-    tech: ['SQL'],
-    github: 'https://github.com/Naxisbeast/database-systems-sql',
+      'SQL foundations, schema case studies from real projects, and software engineering templates — database design and system design together.',
+    tech: ['SQL', 'System Design', 'Documentation'],
+    github: 'https://github.com/Naxisbeast/database-and-systems-design',
     signal: 'DATA_LAYER',
   },
   {
-    title: 'Object-Oriented Programming Java',
+    title: 'CMPG313 Artificial Intelligence',
     description:
-      'Java OOP foundation repo covering classes, encapsulation, inheritance, polymorphism, abstraction, and interfaces.',
-    tech: ['Java'],
-    github: 'https://github.com/Naxisbeast/object-oriented-programming-java',
-    signal: 'OOP_CORE',
+      'AI coursework portfolio covering K-Means clustering, search algorithms, YOLOv8 object detection, and an ELIZA-vs-transformer NLP comparison.',
+    tech: ['Python', 'YOLOv8', 'scikit-learn', 'NetworkX'],
+    github: 'https://github.com/Naxisbeast/cmpg313-artificial-intelligence',
+    signal: 'AI_LABS',
   },
   {
-    title: 'Software Engineering System Design',
+    title: 'Signals & Systems (ELYM316)',
     description:
-      'Software engineering repo with requirements notes, UML concepts, testing templates, risk planning, and academic case studies.',
-    tech: ['Markdown', 'Documentation', 'System Design'],
-    github: 'https://github.com/Naxisbeast/software-engineering-system-design',
-    signal: 'DESIGN_DOCS',
+      'MATLAB laboratory work on FFT analysis, probability distributions, radioactive decay, and LTI system responses. 94% lab average.',
+    tech: ['MATLAB'],
+    github: 'https://github.com/Naxisbeast/ELYM316-Introduction-to-Signals-and-Systems',
+    signal: 'ELECTRONICS',
+  },
+  {
+    title: 'Analogue Electronics (ELYM315)',
+    description:
+      'Op-amp circuits, feedback theory, and RC oscillators with MATLAB analysis. 80.02% module average with 98% on the oscillator report.',
+    tech: ['MATLAB', 'Electronics'],
+    github: 'https://github.com/Naxisbeast/ELYM315-Advanced-Analogue-Electronics',
+    signal: 'ELECTRONICS',
   },
 ];
 
 export const academicWork = [
-  'Python Intro Programming',
-  'C++ Structured Programming',
-  'KMeans Network Clustering',
+  'K-Means Network Clustering',
   'AI Object Detection',
+  'A* Search',
+  'BFS / DFS',
+  'NLP comparison (ELIZA vs transformer)',
 ];
 
 export const portfolioSignals = [
-  'Curated GitHub repositories',
+  'Autonomous trading system with 265 tests',
   'Full-stack academic systems',
-  'Java, Python, C++, SQL foundations',
+  'Consolidated CS foundations across Java, C++, Python',
   'AI academic labs',
+  'Electronics and signals coursework',
   'Student Assistant technical support experience',
 ];
 
@@ -105,12 +115,12 @@ export const skillGroups: SkillGroup[] = [
     skills: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'Supabase'],
   },
   {
-    label: 'Data & Tools',
-    skills: ['MySQL', 'Git/GitHub', 'Database Design', 'AI basics'],
+    label: 'Data & Systems',
+    skills: ['MySQL', 'PostgreSQL', 'Git/GitHub', 'Database Design', 'System Design'],
   },
   {
     label: 'CS Foundations',
-    skills: ['OOP', 'DSA', 'Software Engineering'],
+    skills: ['OOP', 'DSA', 'Software Engineering', 'MATLAB'],
   },
 ];
 
